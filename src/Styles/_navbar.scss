@@ -1,0 +1,32 @@
+header {
+    padding: 4.3rem 2rem ;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.199);
+}
+
+//Navbar
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width:800px) {
+
+
+    header {
+        padding: 3.3rem 8rem;
+        
+    }
+    
+
+}
