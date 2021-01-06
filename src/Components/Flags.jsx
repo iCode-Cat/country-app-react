@@ -27,7 +27,9 @@ const Flags = () => {
   return (
     <div className="main-container">
      <div className="input-container">
-     <input placeholder='Search for a country' type="search" onChange={searchHandler} />
+     <input className="input" placeholder='Search for a country' type="search" onChange={searchHandler} />
+     <div className="input region"> Filter by Region</div>
+    
      </div>
       {input.map((input) => {
         return <SingleFlag key={Math.random() * 19999} input={input} />;

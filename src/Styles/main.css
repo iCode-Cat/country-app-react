@@ -61,27 +61,45 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 3rem 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 48px;
 }
 
-input {
+.input {
   width: 100%;
   max-width: 425px;
   height: 59px;
   border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.096);
-          box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.096);
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.096);
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.096);
+}
+
+.region {
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 250px;
 }
 
 @media screen and (min-width: 800px) {
   .input-container {
     padding: 4.8rem 8rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   input {
     max-width: 480px;
