@@ -14,9 +14,37 @@ const EachFlag = (props) => {
     flagsApi();
   }, []);
 
+  const {name, flag, nativeName, population,region, 
+    
+    subRegion,capital, topLevelDomain, languages } = country;
+    const x =  country.currencies
+    console.log(JSON.stringify(x));
+    
+    
+
   return (
     <div className="each-flag-container">
-      <h1>{country.name}</h1>
+      <div className="each-flag-image">
+        <img src={flag} alt={name+ '-' + 'flag'}/>
+      </div>
+      {/* information part */}
+      <div className="each-flag-information">
+      <div className="each-flag-column-1">
+      <p className="each-name">{name}</p>
+        <p className="each-native">{nativeName}</p>
+        <p className="each-population">{population}</p>
+        <p className="each-region">{region}</p>
+        <p className="each-sub-region">{subRegion}</p>
+        <p className="each-capital">{capital}</p>
+      </div>
+      <div className="each-flag-column-2">
+        <p className="each-domain">{topLevelDomain}</p>
+         
+
+
+      </div>
+      <div className="each-flag-borders"></div>
+      </div>
     </div>
   );
 };

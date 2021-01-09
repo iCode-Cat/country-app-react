@@ -1,0 +1,66 @@
+
+
+.flag-container {
+
+    border-radius: 5px;
+    height: 100%;
+    max-height: 416px;
+    overflow: hidden;
+    background-color: $flagContainer;
+    box-shadow: 1px 1px 15px 0.5px rgba(0, 0, 0, 0.075);
+
+}
+
+.country {
+
+    //general container
+
+    &-information {
+
+        padding: 0 3.2rem;
+
+    }
+
+    &-flag-container {
+        overflow: hidden;
+        height: 190px;
+        
+        
+        
+    }
+
+    &-flag {
+        
+        
+        
+        
+        max-width: 328px;
+        width: 100%;
+    }
+
+    &-name {
+
+        padding: 3.7rem 0 3.1rem 0 
+
+    }
+
+    // includes population / region / capital holders. 
+    &-gap {
+        font-size: 1.6rem;
+        display: grid;
+        gap: 14px;
+    }
+
+    &-capital {
+        padding-bottom: 5.6rem;
+    }
+
+}
+
+// Strong tag settings 
+
+strong {
+
+    font-weight: 600;
+
+}

@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: #FAFAFA;
+}
+
 input {
   border: none;
   outline: none;
@@ -105,5 +109,75 @@ header {
     max-width: 480px;
     height: 56px;
   }
+}
+
+.flags {
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  display: -ms-grid;
+  display: grid;
+  gap: 75px;
+  padding: 5rem 6.8rem;
+  width: 100%;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1300px) {
+  .flags {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .flags {
+    padding: 5rem 8rem;
+  }
+}
+
+.flag-container {
+  border-radius: 5px;
+  height: 100%;
+  max-height: 416px;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 15px 0.5px rgba(0, 0, 0, 0.075);
+          box-shadow: 1px 1px 15px 0.5px rgba(0, 0, 0, 0.075);
+}
+
+.country-information {
+  padding: 0 3.2rem;
+}
+
+.country-flag-container {
+  overflow: hidden;
+  height: 190px;
+}
+
+.country-flag {
+  max-width: 328px;
+  width: 100%;
+}
+
+.country-name {
+  padding: 3.7rem 0 3.1rem 0;
+}
+
+.country-gap {
+  font-size: 1.6rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 14px;
+}
+
+.country-capital {
+  padding-bottom: 5.6rem;
+}
+
+strong {
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */

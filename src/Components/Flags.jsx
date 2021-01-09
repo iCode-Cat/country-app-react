@@ -29,11 +29,13 @@ const Flags = () => {
      <div className="input-container">
      <input className="input" placeholder='Search for a country' type="search" onChange={searchHandler} />
      <div className="input region"> Filter by Region</div>
-    
+      
      </div>
+     <div className="flags">
       {input.map((input) => {
         return <SingleFlag key={Math.random() * 19999} input={input} />;
       })}
+    </div>
     </div>
   );
 };

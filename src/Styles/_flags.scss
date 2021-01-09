@@ -1,1 +1,26 @@
+.flags {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: grid;
+    gap: 75px;
+    padding: 5rem 6.8rem;
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
 
+}
+
+@media screen and (min-width:1300px) {
+
+    .flags {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media screen and (min-width:800px) {
+
+    .flags {
+        padding: 5rem 8rem;
+    }
+
+}
