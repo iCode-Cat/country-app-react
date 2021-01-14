@@ -5,10 +5,10 @@ const SingleFlag = ({ input }) => {
   const [countryName, setCountryName] = useState();
 
     const {flag, name, population, region,capital} = input;
-  console.log(input);
+  console.log(input.region);
   return (
     <div className="flag-container country">
-      <NavLink to={{ pathname: "/" + name }}>
+      <NavLink to={{ pathname: "/" + name.toLowerCase() }}>
         <div className="single-flag" onClick={() => {setCountryName(name);}} >
           <div className="country-flag-container"><img className="country-flag" src={flag} alt={name.toLowerCase() + "-" + 'flag'}/></div>
           <div className="country-information">

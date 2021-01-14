@@ -25,6 +25,11 @@ a {
   color: #111517;
 }
 
+.display {
+  display: block !important;
+  position: absolute;
+}
+
 header {
   padding: 4.3rem 2rem;
   -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.199);
@@ -81,6 +86,7 @@ header {
   border-radius: 5px;
   -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.096);
           box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.096);
+  padding: 1.5rem;
 }
 
 .region {
@@ -89,13 +95,12 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 1.5rem;
   max-width: 250px;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 800px) {
@@ -123,6 +128,48 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.region-container {
+  z-index: 999;
+  cursor: pointer;
+  width: 100%;
+  max-width: 250px;
+}
+
+.region-options {
+  padding: 2.1rem 0;
+  background-color: #fff;
+  width: 100%;
+  max-width: 250px;
+  display: none;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.096);
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.096);
+}
+
+.region-options ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 21px;
+}
+
+.region-options li {
+  padding-left: 1.5rem;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.region-options li:hover {
+  cursor: pointer;
+  color: silver;
 }
 
 @media screen and (min-width: 1300px) {
@@ -179,5 +226,99 @@ header {
 
 strong {
   font-weight: 600;
+}
+
+.article {
+  padding: 6.5rem 3.4375rem;
+}
+
+.article button {
+  cursor: pointer;
+  font-size: 1.4rem;
+  width: 100%;
+  max-width: 136px;
+  height: 40px;
+  margin-bottom: 4rem;
+  border: none;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 15px 0.5px rgba(0, 0, 0, 0.075);
+          box-shadow: 1px 1px 15px 0.5px rgba(0, 0, 0, 0.075);
+  border-radius: 5px;
+}
+
+.each-flag-image img {
+  width: 100%;
+  max-width: 640px;
+}
+
+.each-flag-container {
+  line-height: 1;
+}
+
+.each-flag-container strong {
+  padding-right: 2px;
+}
+
+.each-flag-container .each-name {
+  padding: 6.25rem 0 3.875rem 0;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.each-flag-column-2, .each-flag-column-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 17px;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.each-flag-column-1 {
+  padding-bottom: 1.7rem;
+}
+
+.each-flag-borders {
+  padding-top: 17px;
+  font-size: 1.2rem;
+}
+
+.each-languages, .each-currencies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3px;
+}
+
+@media screen and (min-width: 800px) {
+  .article {
+    padding: 5rem;
+  }
+  .each-flag-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .each-name {
+    padding: 4.7rem 0 3.7rem 0 !important;
+    font-size: 3rem;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .each-flag-information {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 0fr 0fr;
+        grid-template-rows: 0fr 0fr;
+    padding: 0 0 0 12.2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
